@@ -1,6 +1,6 @@
 # abuse-scripts
  
-bash <(curl -s https://raw.githubusercontent.com/Designer0101/abuse-scripts/main/0g-install.sh?token=GHSAT0AAAAAACMVJAUU77DP5TBS23Q7VNAWZU4D2VQ)
+bash <(curl -s https://raw.githubusercontent.com/Designer0101/abuse-scripts/main/0g-install.sh)
 
 0gchaind status | jq '{ latest_block_height: .sync_info.latest_block_height, catching_up: .sync_info.catching_up }'
 
