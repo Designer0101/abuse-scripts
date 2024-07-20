@@ -2,6 +2,8 @@ echo -e "\e[30;47m Please enter the node moniker:\e[0m"
 echo -en ">>> "
 read -r NODE_MONIKER
 
+sudo timedatectl set-timezone UTC
+
 # Install dependencies for building from source
 sudo apt update
 sudo apt install -y curl git jq lz4 build-essential
