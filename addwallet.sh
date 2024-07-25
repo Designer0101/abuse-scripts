@@ -9,6 +9,6 @@ privatekey=$(0gchaind keys unsafe-export-eth-key $walletname)
 
 publickey=$(0gchaind debug addr $(0gchaind keys show $walletname -a) | grep 'Address (hex):' | awk -F ': ' '{print "0x" $2}')
 
-echo "$address"
-echo "$privatekey"
-echo "$publickey"
+echo "address: $address"
+echo "privatekey: $privatekey"
+echo "publickey: $publickey"
